@@ -27,8 +27,30 @@
       font-size: 25px;
       color: white;
   }
+  h3{
+    font-size: 32px;
+    color: white;
+    transition: transform 0.5s;
+}
+
+h3:hover{
+  transform: scale(1.05);
+}
+h1{
+  
+  color: white;
+  transition: transform 0.5s;
+}
+
+h1:hover{
+transform: scale(1.05);
+}
 
 
+h5{
+  font-size: 25px;
+  color: white;
+}
   h7{
       text-align: center;
       color: green;
@@ -160,9 +182,20 @@
 
   .btn:hover{
     transform: scale(1.1);
-
+    color: white;;
   }
 
+  .btn-agenda{
+    transition: transform 0.5s;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+  }
+
+  .btn-agenda:hover{
+    transform: scale(1.1);
+    color: white;;
+  }
   .idealizador{
     font-size: 1rem;
     transition: transform 0.5s;
