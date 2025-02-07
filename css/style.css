@@ -50,7 +50,14 @@ transform: scale(1.05);
 h5{
   font-size: 23px;
   color: white;
+  transition: transform 0.5s;
 }
+
+h5:hover{
+  transform: scale(1.05);
+  }
+
+
   h7{
       text-align: center;
       color: green;
