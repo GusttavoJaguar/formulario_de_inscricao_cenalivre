@@ -12,7 +12,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="nnavbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
@@ -21,10 +21,19 @@
               <a class="nav-link" aria-current="page" href="#index">Início</a>
             </li>
             <li class="nav-item p-1">
-              <a class="nav-link" href="#sobre">Sobre nós</a>
+              <a class="nav-link" href="sobre.html">Sobre nós</a>
             </li>
             <li class="nav-item p-1">
-              <a class="nav-link" href="#eventos">Eventos</a>
+              <a class="nav-link" href="index.html#eventos">Evento</a>
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link" href="agenda.html">Calendário</a>
+            </li>
+          <li class="nav-item p-1">
+            <a class="nav-link" href="regras.html">Regras</a>
+          </li>
+          <li class="nav-item p-1">
+              <a class="nav-link" href="info.html">Informações da batalha</a>
             </li>
             <li class="nav-item p-1">
               <a class="nav-link" href="#inscricao">Inscrição</a>
@@ -53,37 +62,21 @@
     <br>
     <br>
     <br>
-   
+    <br>
+    <br>
     <!--SOBRE-->
-    <h1 class="titulo" align="center">Sobre a Cena Livre</h1><br>
-    <br><br>
+    <section id="sobre"> 
+    <div class="mb-3" align="center">
+
+      <button class="btn-agenda"><a href="sobre.html" style="color: white;"><b>Sobre nós</a></b></button>
     
-    <section id="sobre">
-      <div class="paragrafo">
-        
-
-          <p>
-            Bem-vindo à Cena Livre! <br>Um espaço dedicado à cultura de rua, ao hip-hop e à valorização da arte independente. Nossa missão é fortalecer a cena artística, proporcionando oportunidades para músicos, dançarinos, grafiteiros, poetas e todos que vivem e respiram a cultura black e urbana.
-
-          <br>
-              Acreditamos que a arte de rua é uma poderosa ferramenta de transformação social, capaz de dar voz a comunidades, quebrar barreiras e criar conexões autênticas. Organizamos eventos que vão além do entretenimento, promovendo inclusão, representatividade e fortalecimento da identidade cultural.
-          <br>            
-              Nosso compromisso é construir uma plataforma onde talentos possam se expressar livremente e alcançar novos públicos. <br></bt></nr>Através de batalhas de rap, performances de breakdance, exposições de graffiti, slams de poesia e shows ao vivo, criamos experiências únicas que celebram a diversidade e a autenticidade da cultura de rua.
-          <br>
-          Se você compartilha dessa visão, junte-se a nós! <br>Seja como artista, parceiro ou espectador, seu lugar está garantido na Cena Livre – onde a cultura pulsa e a arte acontece.
-          <br>
-          Fique por dentro dos nossos eventos e faça parte desse movimento!
-          <br>  <br>
-          
-              <b>Cena Livre: cultura em movimento, conectando você ao melhor da cena cultural brasileira!</b>
-         </p>
-
-      </div>
-
+    </div>
   </section>
 
     <br>
     <br>
+    <br>
+    
     <!--Eventos-->
     <section id="eventos">
       <div class="text-center">
@@ -97,30 +90,53 @@
       <div class="text-center">
         <img src="img/form3.png" class="titulo img-fluid" alt="logo" height="150" width="550">
       </div>
-      <br><br><br>
+      
+      <br> <h5>
+        - Temporada 1 - Eposódio 2 - 
+      </h5><br>
+      <div class="mb-3" align="center">
+
+        <button class="btn-agenda"><a href='info.html' style='color: white;'><b>Informações da batalha</a></b></button>
+      
+      </div>
+      <br>
+      <div class="card border-success mb-3">
+      
+        <div class="card-body text-success">
+          <img src="img/evento.jpg" class="evento img-fluid" alt="logo" height="150" width="550">
+        </div>
+      </div>
+      <br>
+      <br><br>
       <div class="mb-3" align="center">
 
         <button class="btn-agenda"><a href="agenda.html" style="color: white;"><b>Calendario das batalhas</a></b></button>
       
       </div>
+
     </section>
     <br><br><br>
 
-    
-    
+   
 
     <!--INSCRIÇÕES-->
     
     
     <section id="inscricao" align="center">
       <h1 class="form"><b>Faça sua inscrição</b></h1>
-      <br><br><br>
+      <br>
+      <div class="mb-3" align="center">
+
+        <button class="btn-agenda"><a href="regras.html" style="color: white;"><b>Leia as regras da batalha</a></b></button>
+      
+      </div>
+      <br><br>
         <div class="inscricao" align="center">
           <br><br>  
           
             
           <br>
-          <form id="contact-form">
+          <form id="contact-form" enctype="multipart/form-data" method="post">
             <div class="mb-3 p-3" align="center">
               <div class="col-md-4">
                 <label for="name" class="form-label"><h5><b>Nome de registro:<br>(Levar documento para comprovação)</b></h5></label>
@@ -157,7 +173,13 @@
                 <input class="form-control" id="data" name="user_data" type="date" />
               </div>
             </div>
-            <br>
+            <br><!--
+            <div class="mb-3 p-3" align="center">
+              <div class="col-md-4" align="center">  
+                <input id="imagem" type="file" accept="image/*" name="user_imagem" class="btn btn-success form-control" required multiple/>
+              </div>
+            </div>-->
+           <br>
             <div class="mb-3" align="center">
               <button type="submit" class="btn"><b>Enviar</b></button>
             </div>
@@ -238,7 +260,7 @@
     <script type="text/javascript" src="js/mail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    
     <script type="text/javascript">
       (function() {
           emailjs.init("NtXLI7pdPVDUfmPe7"); // Substitua por sua chave pública do EmailJS
@@ -254,7 +276,7 @@
         document.getElementById('status-message').textContent = 'Sua inscrição para a Batalha do Quintal foi realizada com sucesso! Boa sorte!';
         document.getElementById('status-message').style.color = 'green';
       }, function(error) {
-        document.getElementById('status-message').textContent = 'Erro ao enviar mensagem: ' + error.text;
+        document.getElementById('status-message').textContent = 'Erro ao enviar inscrição: ' + error.text;
         document.getElementById('status-message').style.color = 'red';
       });
   });

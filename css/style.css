@@ -182,6 +182,16 @@ h5:hover{
     transform: scale(1.05);
   }
 
+
+  .pauta{
+    transition: transform 0.5s;
+  }
+
+  .pauta:hover{
+    transform: scale(1.05);
+  }
+
+
   .btn{
     transition: transform 0.5s;
     color: white;
