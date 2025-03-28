@@ -1,6 +1,11 @@
   body{
+<<<<<<< HEAD
     background-color: black;
     background-image: url('../img/bg.png');
+=======
+    background-color: purple;
+    background-image: url('../img/bgm.png');
+>>>>>>> 1908ddecd3a5b46e52c338657b486dd64c26abc1
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
